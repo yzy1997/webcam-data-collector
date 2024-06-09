@@ -13,7 +13,7 @@ def listen_for_input(input_queue):
 # This function will run in the main thread to record video
 def video_shooting(control_bit):
     # Set up video capture
-    video_capture = cv2.VideoCapture(4)
+    video_capture = cv2.VideoCapture(0)
     frame_size = (int(video_capture.get(cv2.CAP_PROP_FRAME_WIDTH)),
                   int(video_capture.get(cv2.CAP_PROP_FRAME_HEIGHT)))
     fps = video_capture.get(cv2.CAP_PROP_FPS)
